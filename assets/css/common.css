@@ -1,0 +1,70 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+  border: 0;
+}
+
+#skipNav {
+  position: absolute;
+
+}
+
+#skipNav a {
+  position: absolute;
+  white-space: nowrap;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  top: -100px;
+}
+
+#skipNav a:focus,
+#skipNav a:active {
+  top: 0;
+}
+
+.sc-widget .ic-play::before,
+.sc-widget .group-content .vive-area .top-box .btn-refresh::before,
+.sc-widget .group-content .vive-area .top-box .ic-vive,
+.sc-widget .dictionary-area .btn-search .text::after,
+.sc-widget .dictionary-area .btn-search .ic-search::before,
+.sc-widget .group-content .papago-area .ic-papago,
+.sc-widget .group-content .papago-area .ic-papago2,
+.sc-widget .group-link a::before,
+.sc-widget .group-link .ic-naver,
+.ic-whale,
+.chart-item .more::before,
+.ic-status-down,
+.ic-status-up,
+.sc-region .group-header .btn-refresh::before,
+.sc-weather .group-header .compare::before,
+.group-notice .link-all::after,
+.control-box .btn-prev::before,
+.control-box .btn-next::before,
+.sc-recipe .group-feed .feed-item .thumb-box .video::before,
+.sc-shopping .control-area [class*="btn-"]::before,
+.group-control .control-area .btn-prev::before,
+.group-control .control-area .btn-next::before,
+.group-control .view-area [class*="btn-"],
+.group-issue .btn-all .ic-arrow,
+.sc-login .link-login::before,
+#header .util-area [class*="btn-"]::after,
+#header .gnb-area [class*="ic-"]::after,
+#header .gnb-area .icon::before,
+#header .search-form .btn-keyboard::before,
+#header .search-form .btn-auto::before {
+  background-image: url('../images/sp-bgx2.png');
+  background-repeat: no-repeat;
+  background-size: 458px 444px;
+}
+
+
+.group-commerce .commerce-left .menu-area .menu-item .icon::before{
+  background-image: url('../images/sp_main.png');
+  background-repeat: no-repeat;
+  background-size: 158px 137px;;
+}

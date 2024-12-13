@@ -1,0 +1,241 @@
+/*
+  header, footer, reset
+*/
+
+@import './reset.css';
+@import './common.css';
+
+#wrap {
+  min-width: 1340px;
+  /*더이상줄어들지않게*/
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  height: 215px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#header .inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  order: 1;
+}
+#header .search-area {
+  display: flex;
+  width: 706px;
+  border: 1px solid #03c75a;
+  border-radius: 33px;
+  background-color: #fff;
+}
+#header .search-area:hover {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.12);
+}
+#header .search-area .logo {
+  display: block;
+  padding: 17px 16px 17px 27px;
+}
+
+#header .search-area .logo svg {
+  height: 24px;
+  fill: #03c75a;
+}
+
+#header .search-form {
+  flex: 1;
+}
+
+#header .search-form fieldset {
+  display: flex;
+  height: 100%;
+}
+
+#header .search-form .input-text {
+  flex: 1;
+  outline: none;
+
+  color: #000;
+  color: var(--color_search);
+  padding: 17px 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 2rem;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+#header .search-form .btn-keyboard {
+  padding: 22px 3px;
+}
+
+#header .search-form .btn-keyboard::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 14px;
+  background-position: -240px -270px;
+}
+
+#header .search-form .btn-auto {
+  padding: 26px 6px;
+}
+
+#header .search-form .btn-auto::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 6px;
+  background-position: -123px -98px;
+}
+
+#header .search-form .btn-submit {
+  padding: 17px 27px 16px 10px;
+}
+
+#header .search-form .btn-submit svg {
+  height: 25px;
+  fill: #03c75a;
+}
+
+#header .gnb-area {
+  width: 676px;
+}
+
+#header .gnb-area .nav-list {
+  display: flex;
+}
+
+#header .gnb-area .nav-item {
+  width: 64px;
+}
+
+#header .gnb-area .nav-item {
+  margin-left: -3px;
+}
+
+#header .gnb-area .link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+#header .gnb-area .icon {
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+#header .gnb-area .icon::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -3px;
+  background-position: -193px 0px;
+  width: 50px;
+  height: 50px;
+}
+#header .gnb-area .icon:hover::before {
+  background-position: -102px -107px;
+}
+#header .gnb-area .icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+
+#header .gnb-area .name {
+  margin-top: 4px;
+}
+
+#header .gnb-area .ic-mail::after {
+  background-position: -244px -41px;
+}
+
+#header .gnb-area .ic-cafe::after {
+  background-position: -86px -184px;
+}
+#header .gnb-area .ic-blog::after {
+  background-position: -45px -184px;
+}
+#header .gnb-area .ic-shopping::after {
+  background-position: -164px -229px;
+}
+#header .gnb-area .ic-news::after {
+  background-position: -82px -229px;
+}
+#header .gnb-area .ic-stock::after {
+  background-position: -285px 0px;
+}
+#header .gnb-area .ic-property::after {
+  background-position: -123px -229px;
+}
+#header .gnb-area .ic-map::after {
+  background-position: -244px -82px;
+}
+#header .gnb-area .ic-webtoon::after {
+  background-position: -285px -41px;
+}
+#header .gnb-area .ic-chzzk::after {
+  background-image: url('../images/ic-chzzk.png');
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+#header .gnb-area .ic-more::after {
+  background-position: -41px -229px;
+}
+
+#header .gnb-area .ic-more:hover::after {
+  background-position: 0px -229px;
+}
+
+#header .group-util{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+#header .util-area {
+  display: flex;
+}
+#header .util-area.left {
+  margin-left: -12px;
+}
+#header .util-area.right {
+  margin-right: -12px;
+}
+#header .util-area [class*="btn-"]{
+  padding: 8px;
+}
+#header .util-area [class*="btn-"]::after{
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+#header .util-area .btn-menu::after{
+  background-position: -285px -214px;
+}
+#header .util-area .btn-pay::after{
+  background-position: -326px -33px;
+}
+#header .util-area .btn-talk::after{
+  background-position: -326px -165px;
+}
+#header .util-area .btn-alert::after{
+  background-position: -246px -229px;
+}
+#header .util-area .btn-cart::after{
+  background-position: -326px -99px;
+}
